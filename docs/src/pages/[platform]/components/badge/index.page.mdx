@@ -13,6 +13,7 @@ import { PageTabLayout } from '@/components/Layout/PageTabLayout';
 import { getCustomStaticPath } from '@/utils/getCustomStaticPath';
 import { PropsTableTab } from '@/components/propsTable/PropsTableTab';
 import data from '@/data/props-table.json';
+import Component from './react.mdx';
 
 export async function getStaticPaths() {
   return getCustomStaticPath(frontmatter.supportedFrameworks);
@@ -23,11 +24,11 @@ export async function getStaticPaths() {
 export async function getStaticProps() {
   return { props: {} }
 }
-
+ 
 <PageTabLayout 
   tabComponents={[{
     title: "Documentation", 
-    children: <Fragment>{({ platform }) => import(`./${platform}.mdx`)}</Fragment>
+    children: <Component />
   },
   {
     title: "Props", 
