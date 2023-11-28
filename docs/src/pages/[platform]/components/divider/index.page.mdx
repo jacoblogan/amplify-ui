@@ -24,10 +24,12 @@ export async function getStaticProps() {
   return { props: {} }
 }
 
+import Divider from './react.mdx';
+
 <PageTabLayout 
   tabComponents={[{
     title: "Documentation", 
-    children: <Fragment>{({ platform }) => import(`./${platform}.mdx`)}</Fragment>
+    children: <Divider />
   },
   {
     title: "Props", 
