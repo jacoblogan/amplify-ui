@@ -31,7 +31,7 @@ export const Demo = ({
   return (
     <View
       className="docs-component-demo"
-      display={{ base: 'none', medium: 'block' }}
+      display={{ base: 'block', medium: 'block' }}
     >
       <Flex
         direction={{
