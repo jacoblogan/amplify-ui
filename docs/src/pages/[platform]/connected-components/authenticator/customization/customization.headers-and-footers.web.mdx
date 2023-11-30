@@ -10,27 +10,7 @@ import {
 } from '@aws-amplify/ui-react';
 
 import { Example } from '@/components/Example';
-import { Fragment } from '@/components/Fragment';
 import {SocialProviderDemo} from '@/components/SocialProviderDemo' 
-
-## Headers & Footers
-
-The Authenticator has several "slots" that you can customize to add messaging & functionality to meet your app's needs.
-
-The following example customizes these slots with:
-
-- Custom header above the Authenticator with the Amplify logo
-- Custom footer below the Authenticator with _&copy; All Rights Reserved_
-- Custom Sign In header with _Sign in to your account_
-- Custom Sign In footer with a _Reset Password_ link
-- Custom Sign Up header with _Create a new account_
-- Custom Sign Up footer with a _Back to Sign In_ link
-- Custom Confirm Sign Up header with an _Enter Information_ header
-- Custom Confirm Sign Up footer with a _Footer Information_ message
-
-<Fragment>
-  {({ platform }) => import(`./headers-and-footers.${platform}.mdx`)}
-</Fragment>
 
 <Example>
   <SocialProviderDemo components={{
