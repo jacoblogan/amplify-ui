@@ -8,6 +8,11 @@ supportedFrameworks: android|angular|flutter|react|react-native|swift|vue
 import { Fragment } from '@/components/Fragment';
 import { FRAMEWORKS } from '@/data/frameworks';
 import { getCustomStaticPath } from '@/utils/getCustomStaticPath';
+import InlineFilter from '@/components/InlineFilter';
+
+import HeadersAngular from './headers-and-footers.angular.mdx';
+import HeadersReact from './headers-and-footers.react.mdx';
+import HeadersVue from './headers-and-footers.vue.mdx';
 
 export async function getStaticPaths() {
   return getCustomStaticPath(frontmatter.supportedFrameworks);
@@ -23,6 +28,32 @@ export async function getStaticProps() {
   {({ platform }) => import(`./customization.routing.${platform}.mdx`)}
 </Fragment>
 
+<InlineFilter filters={["angular", "react", "vue"]}>
+  ## Headers & Footers
+
+  The Authenticator has several "slots" that you can customize to add messaging & functionality to meet your app's needs.
+
+  The following example customizes these slots with:
+
+  - Custom header above the Authenticator with the Amplify logo
+  - Custom footer below the Authenticator with _&copy; All Rights Reserved_
+  - Custom Sign In header with _Sign in to your account_
+  - Custom Sign In footer with a _Reset Password_ link
+  - Custom Sign Up header with _Create a new account_
+  - Custom Sign Up footer with a _Back to Sign In_ link
+  - Custom Confirm Sign Up header with an _Enter Information_ header
+  - Custom Confirm Sign Up footer with a _Footer Information_ message
+
+  <InlineFilter filters={["angular"]}>
+    <HeadersAngular />
+  </InlineFilter>
+  <InlineFilter filters={["react"]}>
+    <HeadersReact />
+  </InlineFilter>
+  <InlineFilter filters={["vue"]}>
+    <HeadersVue />
+  </InlineFilter>
+</InlineFilter>
 <Fragment useCommonWebContent platforms={['web', 'react-native', 'android', 'swift']}>
   {({ platform }) =>
     import(`./customization.headers-and-footers.${platform}.mdx`)
