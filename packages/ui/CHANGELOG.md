@@ -1,5 +1,11 @@
 # @aws-amplify/ui
 
+## 6.0.7
+
+### Patch Changes
+
+- [#4889](https://github.com/aws-amplify/amplify-ui/pull/4889) [`067e2b1cf`](https://github.com/aws-amplify/amplify-ui/commit/067e2b1cf435db2acb1c25ca3e50a65b53478530) Thanks [@ioanabrooks](https://github.com/ioanabrooks)! - Fix table styling for striped variation
+
 ## 6.0.6
 
 ### Patch Changes
