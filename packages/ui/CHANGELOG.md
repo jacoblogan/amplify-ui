@@ -1,5 +1,11 @@
 # @aws-amplify/ui
 
+## 6.0.18
+
+### Patch Changes
+
+- [#5449](https://github.com/aws-amplify/amplify-ui/pull/5449) [`0919e55ba`](https://github.com/aws-amplify/amplify-ui/commit/0919e55ba6d5ec5f21fbf6d2062618c51b91c09b) Thanks [@YuJM](https://github.com/YuJM)! - update i18n kr.ts
+
 ## 6.0.17
 
 ### Patch Changes

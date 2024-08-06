@@ -1,5 +1,17 @@
 # @aws-amplify/ui-react
 
+## 6.1.15
+
+### Patch Changes
+
+- [#5464](https://github.com/aws-amplify/amplify-ui/pull/5464) [`29f11a53c`](https://github.com/aws-amplify/amplify-ui/commit/29f11a53cc196bde1c25d15f2f79e332f6156cdc) Thanks [@minghuiyang1998](https://github.com/minghuiyang1998)! - fix(accessibility): associated inline error messages with all form fields in aria-describedby.
+
+- [#5378](https://github.com/aws-amplify/amplify-ui/pull/5378) [`e52db7be1`](https://github.com/aws-amplify/amplify-ui/commit/e52db7be1792fb3f83fd7934f25524cdaee2d100) Thanks [@axelEandrews](https://github.com/axelEandrews)! - fixes invalid tab IDs
+
+- Updated dependencies [[`0919e55ba`](https://github.com/aws-amplify/amplify-ui/commit/0919e55ba6d5ec5f21fbf6d2062618c51b91c09b)]:
+  - @aws-amplify/ui@6.0.18
+  - @aws-amplify/ui-react-core@3.0.18
+
 ## 6.1.14
 
 ### Patch Changes
