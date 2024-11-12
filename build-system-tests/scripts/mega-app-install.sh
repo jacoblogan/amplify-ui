@@ -107,7 +107,7 @@ else
     if [[ "$FRAMEWORK" == "react-native" ]]; then
         DEPENDENCIES="$TAGGED_UI_FRAMEWORK @aws-amplify/react-native aws-amplify react-native-safe-area-context @react-native-community/netinfo @react-native-async-storage/async-storage react-native-get-random-values react-native-url-polyfill"
         echo "npm install $DEPENDENCIES"
-        npm install $DEPENDENCIES
+        npm install $DEPENDENCIES --force
         if [[ "$BUILD_TOOL" == "expo" ]]; then
             echo "npx expo install --fix"
             npx expo install --fix # fix the dependencies that are incompatible with the installed expo versio
